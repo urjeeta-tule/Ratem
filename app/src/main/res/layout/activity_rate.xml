@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/material_blue_grey_950"
+    tools:context="com.mystuff.ratem.rate">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Nerdiness"
+
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l1"/>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v1"
+                android:layout_toLeftOf="@+id/n"
+                android:layout_below="@id/l1"
+                android:layout_above="@+id/l2"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+            <SeekBar
+                android:max="100"
+                android:id="@+id/n"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@+id/l1"
+
+
+                android:indeterminate="false" />
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Sluttiness"
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l2"
+                android:layout_below="@id/l1"/>
+
+
+            <SeekBar
+                android:max="100"
+
+                android:id="@+id/s"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@id/l2"
+                android:layout_below="@id/n"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v2"
+                android:layout_toRightOf="@+id/s"
+                android:layout_below="@+id/v1"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Attractive"
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l3"
+                android:layout_below="@+id/l2"/>
+
+
+            <SeekBar
+                android:max="100"
+
+                android:id="@+id/a"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@id/l3"
+                android:layout_below="@+id/s"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v3"
+                android:layout_toRightOf="@+id/a"
+                android:layout_below="@+id/v2"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Two-facedness"
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l4"
+                android:layout_below="@id/l3"/>
+
+
+            <SeekBar
+                android:max="100"
+
+                android:id="@+id/t"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@+id/l4"
+                android:layout_below="@id/a"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v4"
+                android:layout_toRightOf="@+id/t"
+                android:layout_below="@+id/v3"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Judgemental snob"
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l5"
+                android:layout_below="@id/l4"/>
+
+
+            <SeekBar
+                android:max="100"
+
+                android:id="@+id/j"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@+id/l5"
+                android:layout_below="@id/t"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v5"
+                android:layout_toRightOf="@+id/j"
+                android:layout_below="@+id/v4"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Ego"
+                android:textColor="@color/material_grey_100"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/l6"
+                android:layout_below="@id/l5"/>
+
+
+            <SeekBar
+                android:max="100"
+
+                android:id="@+id/e"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@id/l6"
+                android:layout_below="@id/j"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/v6"
+                android:layout_toRightOf="@+id/e"
+                android:layout_below="@+id/v5"
+                android:textColor="@color/material_grey_100"
+                android:textSize="12.5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Rate"
+                android:id="@+id/rate"
+                android:layout_below="@id/e"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

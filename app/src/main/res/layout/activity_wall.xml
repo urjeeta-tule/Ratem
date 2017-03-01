@@ -1,0 +1,350 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".Wall"
+    android:background="#808080"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.09"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1666"
+                android:elevation="@dimen/abc_dropdownitem_text_padding_left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6666"
+                android:text="Ratem!!!"
+                android:layout_gravity="center_horizontal"
+                android:typeface="serif"
+                android:paddingLeft="90dp"
+                android:paddingTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#FAEBD7"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1666"
+                android:elevation="@dimen/notification_subtext_size"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.91"
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:background="@color/material_blue_grey_950"
+            >
+            <ImageButton
+                android:id="@+id/b1"
+                android:layout_width="245dp"
+                android:layout_height="150dp"
+                android:src="@drawable/avatar_2x"
+                android:onClick="getme"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/b1"
+                android:text="here's the rank-10"
+                android:paddingTop="100dp"
+                android:paddingLeft="50dp"
+                android:layout_above="@+id/i1"
+                android:textColor="#FAEBD7"/>
+
+
+            <TextView
+                    android:id="@+id/i1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="here's the info-10"
+                android:layout_below="@+id/b1"
+                android:textColor="#FAEBD7"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/i1"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Sub"
+                        android:textColor="@color/material_grey_100"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00"
+                        android:textColorHint="@color/material_grey_100"
+                        android:hint="Add a comment" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Add"
+                        android:textColor="@color/material_grey_100"/>
+                </LinearLayout>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:background="@color/material_blue_grey_950"
+                >
+                <ImageButton
+                    android:id="@+id/b2"
+                    android:layout_width="245dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/seemslegitobama"
+                    android:onClick="getme"/>
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/b2"
+                    android:text="here's the rank-10"
+                    android:paddingTop="100dp"
+                    android:paddingLeft="50dp"
+                    android:textColor="#FAEBD7"/>
+
+
+                <TextView
+                    android:id="@+id/i2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="here's the info-10"
+                    android:layout_below="@+id/b2"
+                    android:textColor="#FAEBD7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/i2"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Sub"
+                        android:textColor="@color/material_grey_100"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00"
+                        android:textColorHint="@color/material_grey_100"
+                        android:hint="Add a comment" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Add"
+                        android:textColor="@color/material_grey_100"/>
+                </LinearLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:background="@color/material_blue_grey_950"
+                >
+                <ImageButton
+                    android:id="@+id/b3"
+                    android:layout_width="245dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/download"
+                    android:onClick="getme"/>
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/b3"
+                    android:text="here's the rank-10"
+                    android:paddingTop="100dp"
+                    android:paddingLeft="50dp"
+                    android:textColor="#FAEBD7"/>
+
+
+                <TextView
+                    android:id="@+id/i3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="here's the info-10"
+                    android:layout_below="@+id/b3"
+                    android:textColor="#FAEBD7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/i3"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Sub"
+                        android:textColor="@color/material_grey_100"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00"
+                        android:textColorHint="@color/material_grey_100"
+                        android:hint="Add a comment" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Add"
+                        android:textColor="@color/material_grey_100"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:background="@color/material_blue_grey_950"
+                >
+                <ImageButton
+                    android:id="@+id/b4"
+                    android:layout_width="245dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/frnd"
+                    android:onClick="getme"/>
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/b4"
+                    android:text="here's the rank-10"
+                    android:paddingTop="100dp"
+                    android:paddingLeft="50dp"
+                    android:textColor="#FAEBD7"/>
+
+
+                <TextView
+                    android:id="@+id/i4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="here's the info-10"
+                    android:layout_below="@+id/b4"
+                    android:textColor="#FAEBD7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/i4"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Sub"
+                        android:textColor="@color/material_grey_100"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00"
+                        android:textColorHint="@color/material_grey_100"
+                        android:hint="Add a comment" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Add"
+                        android:textColor="@color/material_grey_100"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:background="@color/material_blue_grey_950"
+                >
+                <ImageButton
+                    android:id="@+id/b5"
+                    android:layout_width="245dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo_f6_stillsmallsize"
+                    android:onClick="getme"/>
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/b5"
+                    android:text="here's the rank-10"
+                    android:paddingTop="100dp"
+                    android:paddingLeft="50dp"
+                    android:textColor="#FAEBD7"/>
+
+
+                <TextView
+                    android:id="@+id/i5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="here's the info-10"
+                    android:layout_below="@+id/b5"
+                    android:textColor="#FAEBD7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/i5"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Sub"
+                        android:textColor="@color/material_grey_100"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00"
+                        android:textColorHint="@color/material_grey_100"
+                        android:hint="Add a comment" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="Add"
+                        android:textColor="@color/material_grey_100"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>
